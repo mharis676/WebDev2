@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    Add Image
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Images&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;!-- For Adding images --&gt;
+            &lt;!-- &lt;Width and Height are two attribute&gt; --&gt;
+            &lt;img width="230" height="230" src="train.PNG" alt="Train image"&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    AUDIO AND VIDEO
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;AUDIO VIDEO&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;!-- poster="" used for thumbnail --&gt;
+            &lt;video src="12.mp4" width="555" height="555" controls autoplay loop muted poster=""&gt;&lt;/video&gt;
+            &lt;!-- AUDIO TAG controls is important --&gt;
+            &lt;audio src="" controls autoplay loop preload="auto"&gt;&lt;/audio&gt;
+            &lt;!-- none (Should not preload the data) --&gt;
+            &lt;!-- metadata preload the information about audio --&gt;
+            &lt;!-- auto preload entire audio. Download and auto reload --&gt;
+            &lt;svg width="100" height="100"&gt;
+                &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+            &lt;/svg&gt;
+            &lt;!-- SVG stands for Scalable Vector Graphics
+            SVG is used to define vector-based graphics for the Web
+            SVG defines graphics in XML format
+            Each element and attribute in SVG files can be animated
+            SVG is a W3C recommendation
+            SVG integrates with other standards, such as CSS, DOM, XSL, and JavaScript --&gt;
+            &lt;img src="img.svg" alt="Image"&gt;
+            &lt;!-- placed an external link in svg file to access --&gt;
+            &lt;!-- Used to embed another website into our website --&gt;
+            &lt;iframe src="https://www.facebook.com/" width="450" height="444"&gt;&lt;/iframe&gt;
+            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=lCHsG8W5_p97u5hF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    BOOKMARK MANAGER
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Bookmark Manager&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;My Bookmarks&lt;/h1&gt;
+            &lt;h2&gt;Primary Bookmarks&lt;/h2&gt;
+            &lt;!-- For opening in new tab _blank --&gt;
+            Open &lt;a target="_blank" href="http://www.google.com"&gt;Google&lt;/a&gt;
+            &lt;h2&gt;Secondary Bookmarks&lt;/h2&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    FORMS
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Forms&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;form action="post"&gt;
+                 &lt;!-- get request simple request (telling something to server) --&gt;
+                 &lt;!-- post request when we want to give data --&gt;
+                 &lt;!-- INPUT TAG --&gt;
+                  &lt;h1&gt;Form to Apply&lt;/h1&gt;
+                  &lt;label for=""&gt;Enter Your Username&lt;/label&gt;
+                 &lt;input type="text" id="username" name="UserName" placeholder="Enter Username" value=""&gt;
+                 &lt;div&gt;
+                    &lt;input type="radio" id="male" name="gender" value="male"&gt;
+                    &lt;label for="male"&gt;Male&lt;/label&gt;
+                    &lt;input type="radio" id="female" name="gender" value="female"&gt;
+                    &lt;label for="female"&gt;Female&lt;/label&gt;
+                    &lt;input type="radio" id="None" name="" value="Gay"&gt;
+                    &lt;label for="None"&gt;None&lt;/label&gt;
+                    &lt;!-- Name matters alot --&gt;
+                 &lt;/div&gt;
+                 &lt;div&gt;
+                    &lt;input type="checkbox" id="Subcribed" name="subscribe" value="yes"&gt;
+                    &lt;label for="subscribe"&gt;Subscribe to my channel&lt;/label&gt;
+                 &lt;/div&gt;
+                 &lt;div&gt;
+                    &lt;label for="comment"&gt;Enter your comment here&lt;/label&gt;
+                    &lt;textarea name="comment" rows="4" cols="50" id="comment"&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;select name="fruits" id=""&gt;
+                        &lt;option value="apple"&gt;Apple&lt;/option&gt;
+                        &lt;option value="banana"&gt;Banana&lt;/option&gt;
+                        &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    
+        &lt;!-- MANY OTHERS ATTRIBUTES IN FORM&gt; CAN BE SEEN ON Manual of Form Html --&gt;
+    </code></pre>
+    HTML IMPORTANT CONCEPTS
+    <code><pre>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Entities, Code tag and more on HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;HTML ENTITIES&lt;/h1&gt;
+    3&gt;4
+    This is the code of paragraph &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+    &lt;pre&gt;
+        &amp;lt;p&amp;gt;This is a para&amp;lt;/p&amp;gt;
+        this is after few new lines and some more
+    &lt;/pre&gt;
+    Copyright &amp;copy;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;codewithHaris
+    &lt;blockquote class=&quot;source-url&quot;&gt;
+        Text here
+    &lt;/blockquote&gt;
+    &lt;q cite=&quot;source-url&quot;&gt;Quotation Text here&lt;/q&gt;
+    &lt;code&gt;
+        any code here
+    &lt;/code&gt;
+    &lt;pre&gt;&lt;code&gt;
+    &amp;lt;!DOCTYPE html&amp;gt;
+    &amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+        &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&amp;gt;
+        &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre></code>
+    lists
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Lists&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    unordered_list
+    &lt;ul type=&quot;square&quot;&gt;
+        &lt;li&gt;Harry&lt;/li&gt;
+        &lt;li&gt; John&lt;/li&gt;
+        &lt;li&gt; John&lt;/li&gt;
+    &lt;/ul&gt;
+    ordered_list
+    &lt;ol type=&quot;A&quot;&gt;
+        &lt;li&gt;john&lt;/li&gt;
+        &lt;li&gt;Abc&lt;/li&gt;
+        &lt;li&gt;john&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;Heading&lt;/dt&gt;
+        &lt;dd&gt;Discription&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <p>FORMS</p>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Forms&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action="post"&gt;
+        &lt;!-- get request simple request (telling something to server) --&gt;
+        &lt;!-- post request when we want to give data --&gt;
+        &lt;!-- INPUT TAG --&gt;
+        &lt;h1&gt;Form to Apply&lt;/h1&gt;
+        &lt;label for="username"&gt;Enter Your Username&lt;/label&gt;
+        &lt;input type="text" id="username" name="UserName" placeholder="Enter Username" value=""&gt;
+        &lt;div&gt;
+            &lt;input type="radio" id="male" name="gender" value="male"&gt;
+            &lt;label for="male"&gt;Male&lt;/label&gt;
+            &lt;input type="radio" id="female" name="gender" value="female"&gt;
+            &lt;label for="female"&gt;Female&lt;/label&gt;
+            &lt;input type="radio" id="none" name="gender" value="none"&gt;
+            &lt;label for="none"&gt;None&lt;/label&gt;
+            &lt;!-- Name matters a lot --&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="checkbox" id="subscribed" name="subscribe" value="yes"&gt;
+            &lt;label for="subscribed"&gt;Subscribe to my channel&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label for="comment"&gt;Enter your comment here&lt;/label&gt;
+            &lt;textarea name="comment" rows="4" cols="50" id="comment"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label for="fruits"&gt;Choose a fruit:&lt;/label&gt;
+            &lt;select name="fruits" id="fruits"&gt;
+                &lt;option value="apple"&gt;Apple&lt;/option&gt;
+                &lt;option value="banana"&gt;Banana&lt;/option&gt;
+                &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <p>INLINE AND BLOCK ELEMENTS</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Inline and Block Element&lt;/title&gt;
+        &lt;link rel="stylesheet" href="styles1.css"&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;p&gt;Hy I am para a block element p&lt;/p&gt;
+        &lt;div id="bele"&gt;I am block element div&lt;/div&gt;
+        &lt;!--Inline  --&gt;
+        &lt;a id="aword"&gt;Hy I am Word or inline a&lt;/a&gt;
+        &lt;span id="aspan"&gt;I am inline element span&lt;/span&gt;
+    &lt;/body&gt;
+    
+    &lt;/html&gt;
+        </code></pre>
+    <p>ID AND CLASSES</p>
+    <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;ID AND CLASSES&lt;/title&gt;
+                &lt;link rel="stylesheet" href="styles2.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div class="red bg-yellow" id="firstdiv"&gt;First&lt;/div&gt;
+                &lt;div class="seconddiv"&gt;Second&lt;/div&gt;
+                &lt;span class="red"&gt;&lt;/span&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+    </code></pre>
+    <p>audio and video</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;AUDIO VIDEO&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- poster="" used for thumbnail --&gt;
+    &lt;video src="12.mp4" width="555" height="555" controls autoplay loop muted poster=""&gt;&lt;/video&gt;
+    &lt;!-- AUDIO TAG controls is important--&gt;
+    &lt;audio src="" controls autoplay loop preload="auto"&gt;&lt;/audio&gt;
+    &lt;!-- none (Should not preload the data) --&gt;
+    &lt;!-- metadata preload the information about audio --&gt;
+    &lt;!-- auto preload entire audio. Download and auto reload --&gt;
+    &lt;svg width="100" height="100"&gt;
+        &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+    &lt;/svg&gt;
+    &lt;!-- SVG stands for Scalable Vector Graphics
+    SVG is used to define vector-based graphics for the Web
+    SVG defines graphics in XML format
+    Each element and attribute in SVG files can be animated
+    SVG is a W3C recommendation
+    SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript --&gt;
+    
+    &lt;img src="img.svg" alt="Image"&gt;
+    &lt;!-- placed an external link in svg file to access --&gt;
+
+    &lt;!-- Used to embed another website into our website --&gt;
+    &lt;iframe src="https://www.facebook.com/" width="450" height="444"&gt;&lt;/iframe&gt;
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=lCHsG8W5_p97u5hF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <p>Semantix Tags</p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Semantic Tags&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;
+                &lt;nav&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;About&lt;/li&gt;
+                        &lt;li&gt;Contact&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/header&gt;
+            &lt;article&gt;&lt;/article&gt;
+            &lt;section&gt;&lt;/section&gt;
+            &lt;main&gt;
+               &lt;footer&gt;
+                Copyright CWH || All rights reserved.
+               &lt;/footer&gt; 
+            &lt;/main&gt;
+            &lt;img src="tags.PNG" width="200" height="200" alt=""&gt;
+            &lt;img src="Details.png" width="500" height="200" alt=""&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+    <h1>HTML ENTITIES</h1>
+    <pre><code>
+                &lt;h1&gt;HTML ENTITIES&lt;/h1&gt;
+                    3&gt;4
+                    This is the code of paragraph &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+                    &lt;pre&gt;
+                        &lt;p&gt;This is a para&lt;/p&gt;
+                
+                
+                
+                        this is after few new lines and some more
+                    &lt;/pre&gt;
+                    Copyright &amp;copy;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; codewithHaris
+                    &lt;blockquote class=&quot;source-url&quot;&gt;
+                        Text here
+                    &lt;/blockquote&gt;
+                    &lt;q cite=&quot;source-url&quot;&gt;Quotation Text here&lt;/q&gt;
+                    &lt;code&gt;
+                        any code here
+                    &lt;/code&gt;
+                    </code></pre>
+    <pre><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                            &lt;body&gt; 
+                            
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                        </code></pre>
+    <p>CSS SELECTORS</p>
+    <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;CSS SELECTORS&lt;/title&gt;
+                    &lt;style&gt;
+                        /* ELEMENT SELECTOR */
+                        div{
+                            background-color:red ;
+                        }
+                        /* Class Selector */
+                        .red
+                        {
+                            background-color: blue;
+                        }
+                        /* Id selector */
+                        #green
+                        {
+                            background-color: green;
+                        }
+                        /* child Selector */
+                        /* Every p inside div */
+                        div&gt;p{
+                            color: blue;
+                            background-color: brown;
+                        }
+                        /* Descendent Selector */
+                        /* a way to select elements that are located 
+                        somewhere underneath other elements */
+                        div p{
+                            color: black;
+                            background-color: brown;
+                        }
+                        /* UNIVERSAL SELECTORS */
+                        *{
+                            margin: 0;
+                            padding: 0;
+                        }
+                        /* Pseudo Selector */
+                        a:visited
+                        {
+                            color: black;
+                        }
+                        a:link
+                        {
+                            color: green;
+                        }
+                        a:active
+                        {
+                            color: red;
+                        }
+                        a:hover{
+                            background-color: violet;
+                        }
+                        p:first-child
+                        {
+                            background-color: aqua;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;red&quot;&gt;I am a DIv&lt;/div&gt;
+                    &lt;div&gt;I am a DIv2&lt;/div&gt;
+                    &lt;div id=&quot;green&quot;&gt;I am a DIV3&lt;/div&gt;
+                    &lt;div&gt;&lt;p&gt;I am para inside div&lt;/p&gt;&lt;/div&gt;
+                    &lt;a href=&quot;https://www.google.com&quot;&gt;Go to google&lt;/a&gt;
+                    &lt;a href=&quot;https://www.outlook.com&quot;&gt;Go to Outlook&lt;/a&gt;
+                    &lt;div class=&quot;one&quot;&gt;&lt;p&gt;I am first&lt;/p&gt;
+                    &lt;p&gt;I am Second&lt;/p&gt;&lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                    </code></pre>
+    <p>CSS BOX MODEL</p>
+    <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;CSS BOXMODEL&lt;/title&gt;
+                    &lt;style&gt;
+                        .box{
+                            background-color: aqua;
+                        }
+                        .box1
+                        {
+                            color: yellow;
+                            padding: 10px;
+                            /* Padding is included in expanding color */
+                            margin:25px;
+                            border: 2px solid gray;
+                            height: 200px;
+                            /* if box sizing not used. The height doesn&apos;t include padding, border */
+                            box-sizing: border-box;
+                            /* the width and height include the content, padding, and border.*/
+                            /* Doesn&apos;t include margin */
+                        }
+                        .box2
+                        {
+                            color: red;
+                            padding: 10px;
+                            margin:25px;
+                            border: 2px solid black;
+                            height: 200px;
+                            box-sizing: border-box;
+                            /* Margin collapse */
+                            /* If two margins overlap then maximum margin is applied */
+                        }
+                        *{
+                            padding: 0;
+                            margin: 0;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;box box1&quot;&gt;
+                        I am a box
+                    &lt;/div&gt;
+                    &lt;div class=&quot;box box2&quot;&gt;I am a box2&lt;/div&gt;
+                    &lt;img style=&quot;width: 200;&quot; src=&quot;Boxmodel.PNG&quot; alt=&quot;nothing&quot;&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+    </code></pre>
+    <p>FONR TEXT COLOR PROPERTIES</p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;FONT TEXT AND COLOR&lt;/title&gt;
+            &lt;style&gt;
+                @import url(&apos;https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&amp;display=swap&apos;);
+                p{
+                    font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif;
+                    font-style: italic;
+                    font-style: normal;
+                    font-style: oblique;
+                    font-weight: 700;
+                    text-decoration: overline;
+                    line-height: 2;
+                    /* letter-spacing: ; */
+                }
+                h1{
+                    font-family: &quot;Playwrite ES Deco&quot;, cursive;
+                    font-optical-sizing: auto;
+                    font-weight:100;
+                    font-style:normal;
+                    font-size: 20px;
+                }
+                h2{
+                    text-align: center;
+                    text-transform: capitalize;
+                    text-transform: uppercase;
+                    text-transform: lowercase;
+                    text-decoration: underline;
+                    text-decoration-color: aqua;
+                    text-decoration-style: dotted;
+                    text-indent: 50;
+                }
+                .lorem
+                {
+                    border: 2px solid red;
+                    width: 145;
+                    /* text-overflow: ellipsis;
+                    overflow:hidden; */
+                    word-break: break-all;
+                }
+                /* We can also add text from google */
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;FONTS&lt;/h1&gt;
+            &lt;h2&gt;About Fonts&lt;/h2&gt;
+            &lt;p&gt;THIS IS MY FONT&lt;/p&gt;
+            &lt;p class=&quot;lorem&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit quaerat voluptas deserunt exercitationem recusandae quae odio doloribus hic perspiciatis repellat, praesentium saepe iste, cum ducimus aliquid minima pariatur dolore eaque quos officiis dolores. Non nihil voluptates repellat perferendis facilis voluptatibus minus molestiae modi velit.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+    <p>COLORS</p>
+    <code><pre>
+            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Colors&lt;/title&gt;
+    &lt;style&gt;
+        h1{
+            color: darkred;
+        }
+        li{
+            color: #0BEE0B;
+        }
+        p{
+            color:rgb(76, 125, 59)
+        }
+        h2{
+            color: rgba(75, 125, 59, 0.473);
+            /* alpha represents the opacity of colors  */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Let&apos;s Learn About Colors&lt;/h1&gt;
+    &lt;p&gt;Color can be represented in:
+        &lt;ol&gt;
+            &lt;li&gt;Color keyword&lt;/li&gt;
+            like red, blue, and many other keywords
+            &lt;li&gt;Hex Color Code&lt;/li&gt;
+            we can get from the internet and be written as using #
+            &lt;li&gt;RGB&lt;/li&gt;
+            color: rgb(val,val,val)
+            &lt;li&gt;RGBA&lt;/li&gt;
+            &lt;li&gt;HSL&lt;/li&gt;
+            H is hue. Type
+            S is saturation. Intensity
+            L is lightness. 
+        &lt;/ol&gt;
+    &lt;/p&gt;
+    &lt;h2&gt;COLORS&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <p>SPECIFICITY AND CASCADE</p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;SPECIFICITY AND CASCADE&lt;/title&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;styles4.css&quot;&gt;
+            &lt;style&gt;
+                h1{
+                    color: blueviolet;
+                }
+                .yellow{
+                    color: yellow;
+                }
+                .cred
+                {
+                    color: red;
+                }
+                .cpurple
+                {
+                    color: purple;
+                }
+                /* [data-x=a]
+                {
+                    background-color: red;
+                } */
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div&gt;
+                &lt;h1 class=&quot;yellow cred cpurple&quot; data-x=&quot;a&quot;&gt;CSS SPECIFICITY&lt;/h1&gt;
+                &lt;h1&gt;CASCADE ALGORITHM&lt;/h1&gt;
+                &lt;img src=&quot;cascade.PNG&quot; style=&quot;width: 400px;&quot; alt=&quot;&quot;&gt;
+                &lt;img src=&quot;cascade2.PNG&quot; style=&quot;width: 400px;&quot; alt=&quot;&quot;&gt;
+                &lt;img src=&quot;Specificty.PNG&quot; alt=&quot;&quot;&gt;
+                &lt;h1&gt;Summary of Lecture 21&lt;/h1&gt; 
+                &lt;ul&gt;
+                    &lt;li&gt; Cascade: Many selectors are used to style a single element and CSS solves this conflict by Cascade.&lt;/li&gt;
+                    &lt;li&gt;Cascade Algorithm : It determines which property of CSS will be applied to the element. The cascade algorithm has 4 distinct stages.&lt;/li&gt;
+                    &lt;li&gt; Position and order of appearance: If the same selector, then the last one will be used&lt;/li&gt;
+                    &lt;li&gt; Origin: authored CSS has priority&lt;/li&gt;
+                    &lt;li&gt; Important: When !important is used, it has the highest priority.&lt;/li&gt; 
+                    &lt;li&gt; Specificity: Selector with high specificity is applied to the HTML element.&lt;/li&gt;
+                    &lt;li&gt; Order of Specificity: Inline Style &gt; ID selector &gt; Class or Attribute selector &gt; Element Selector &gt; Universal Selector&lt;/li&gt;
+                    &lt;li&gt; Calculating Specificity: Value of Each Selector: Universal is 0, 1 for each element selector or pseudo-element, 10 for each class value (or pseudo-class or attribute selector), 100 for each ID value. Inline Style has 1000 specificity. Just add value to find specificity&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+    <p>CSS Sizing Units</p>
+    <code><pre>
+    &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Sizing Units&lt;/title&gt;
+    &lt;style&gt;
+    *
+    {
+    margin: 0;
+    padding: 0;
+
+    }
+    html{
+    font-size: 15px ;
+    }
+    .box
+    {
+    border: 2px solid black;
+    width: 2px;
+    /* px is 196th of inch */
+    width: 100vw;
+    /* Responsive unit viewport width and height. Auto take width of screen */
+    /* 80% of width and height of screen */
+    width: 80vw;
+    height: 80vh;
+    /* Make content to center. Always work on block level element */
+    margin: auto;
+    /* em and rem*/
+    }
+    .container
+    {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 80vw;
+    /* Responsive unit viewport height. Auto take height of screen */
+    height: 80vh;
+    margin: 23px auto;
+    font-size: 18px;
+    /* By default 16px */
+    background-color: aquamarine;
+    }
+    .container p{
+    /* font-size: 1.5em; */
+    /* multiply container font with this p font*/
+    font-size: 1.5rem;
+    /* Root size times(HTML) */
+    }
+    .container2
+    {
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    background-color: aqua;
+    /* width: 100vmin; */
+    /* in phone vmin is width and in computer vmin is height */
+    /* 100vmin means 100 of minimum of width or height */
+    /* vmax is opposite */
+    width: 80vw;
+    min-width: 80vh;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class="box"&gt;This is a box&lt;/div&gt;
+    &lt;div class="container"&gt;&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+    explicabo aut, numquam ipsa voluptas dolor quasi ipsum omnis esse eveniet?&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="container2"&gt;&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+    explicabo aut, numquam ipsa voluptas dolor quasi ipsum omnis esse eveniet?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis mollitia id voluptatem facere odio eius provident
+    odit esse exercitationem temporibus dolorem quod laudantium, sunt, similique tempora maxime ducimus explicabo nisi
+    nihil ipsa. Totam possimus laboriosam eligendi, voluptas ipsum voluptates maxime necessitatibus fugiat quo corporis
+    perferendis expedita a consequuntur molestias error voluptatum mollitia ullam explicabo! Dolorem, ad. Excepturi
+    repellat saepe iure natus aspernatur nihil animi ut pariatur dolorem laborum aperiam veritatis, accusamus in ex cum
+    esse corrupti inventore maxime minima incidunt voluptate dicta. Doloremque ex, repellendus, culpa praesentium iure
+    ut hic perferendis labore debitis ea porro error quae totam, reiciendis asperiores veniam fugiat magni. Velit qui,
+    aspernatur quam, laborum perspiciatis deserunt dolorum praesentium officiis magnam quisquam ipsa distinctio harum!
+    Odit dolorum incidunt et adipisci qui fugit mollitia labore natus ipsum blanditiis amet autem odio asperiores, quam
+    minus, tempora alias laudantium suscipit magnam quia. Harum hic deserunt porro omnis ab explicabo inventore, impedit
+    sunt quo ipsum aut cumque doloribus nostrum voluptatibus officiis nam dolore! Commodi dicta ut voluptate,
+    perspiciatis, reiciendis magni maiores soluta vero saepe molestiae porro. Adipisci, atque? Aliquam debitis fuga
+    soluta nulla laboriosam! Deleniti eaque omnis officia sit reprehenderit? Quas maxime voluptatem, provident qui
+    suscipit magni nam aspernatur iure doloremque nulla ratione at modi sed totam expedita earum sequi consequuntur
+    dolor deleniti, inventore aut nihil ipsa! Sapiente quam nesciunt doloremque odit expedita vel, debitis cum eum!
+    Beatae eligendi quas nisi veniam, velit impedit labore magnam, veritatis quis voluptates ut iusto tempora explicabo
+    voluptas ducimus ex maiores animi similique quaerat laboriosam repudiandae eaque optio culpa. Exercitationem
+    doloremque, aliquid, repellat sequi distinctio, modi tempora deserunt culpa sed facilis cum. Sint laborum at
+    repellendus reiciendis asperiores repellat quod culpa repudiandae beatae, magnam nam similique eum, recusandae quasi
+    eveniet animi ullam. Soluta dolorem unde ut magnam harum, repellat consequuntur blanditiis nostrum reprehenderit
+    incidunt quos, adipisci reiciendis odio a consectetur nemo. Facere sit atque libero deleniti sapiente, deserunt ea
+    placeat odio possimus corporis minus non repellat veniam quo, impedit voluptatibus. Reprehenderit alias dicta
+    molestias in debitis quis aspernatur esse cupiditate dolore eius, deleniti accusamus laudantium neque delectus
+    officia inventore necessitatibus quod magni, adipisci iste. Velit quas, laborum facere quisquam, beatae culpa
+    praesentium numquam suscipit minus recusandae doloremque amet! Quidem nemo dolorem quaerat ipsa unde enim quis vero
+    dolores quisquam excepturi. Quisquam ipsa recusandae accusantium illum enim deleniti! Beatae sint laboriosam
+    pariatur laudantium quam? Ipsa, est nihil molestias veniam dicta, soluta autem nostrum ducimus hic cumque delectus
+    sunt explicabo impedit repudiandae modi perspiciatis laborum consequuntur facere ea aut natus ex exercitationem.
+    Quos quisquam facilis est enim? Ab, beatae quia eos, recusandae ipsum mollitia numquam rem dolorum eaque dolor
+    consequatur iusto reiciendis fugit quidem natus omnis. Fuga odit, minima earum repudiandae sapiente necessitatibus
+    omnis vero aspernatur molestias adipisci numquam officiis at. Quisquam mollitia explicabo sit minus illo sapiente
+    dolorum, ducimus dolore ipsum nisi rerum reprehenderit architecto impedit modi ratione, sed saepe similique hic?
+    Neque quidem animi est illo corrupti praesentium molestiae possimus fugit nobis quo? Perferendis ut expedita quis
+    officiis nisi recusandae corporis accusantium maxime ipsum quos rerum sint quae, doloribus tempora fugit cupiditate!
+    Quasi iure impedit nam at alias! Quibusdam provident dicta hic minima voluptates dolore aspernatur consectetur,
+    rerum dolores beatae sit officiis inventore assumenda repellat accusantium veniam cupiditate distinctio laudantium
+    porro harum. Enim, provident voluptatibus. Reiciendis, harum. Illo labore perspiciatis unde, ipsum autem impedit at
+    veniam consequatur accusantium sit quaerat deserunt error doloribus, quidem porro exercitationem expedita
+    consequuntur facilis? Ipsam dolor magnam repudiandae. Aperiam numquam quo earum delectus minus eos? Ullam magnam
+    aspernatur, tenetur in expedita minima velit ipsum consequatur excepturi, molestias explicabo, sit sed minus
+    dignissimos aliquid. Aliquid, alias eos. Aliquam tenetur cum iste, quaerat soluta totam doloremque et magnam
+    doloribus sunt distinctio esse laborum rerum exercitationem optio id accusantium sit consequuntur quas eius? Facilis
+    et debitis esse earum id voluptatibus nostrum, tempora quisquam illo quo necessitatibus ducimus! Ab dicta odio eum!
+    Voluptatem hic quod quas, dicta explicabo, vel in ullam doloremque accusamus eaque provident qui,
+    asperiores&lt;
+    /* in phone vmin is width and in computer vmin is height */
+            /* 100vmin means 100 of minimum of width or height */
+            /* vmax is opposite */
+    /code&gt;&lt;/pre&gt;
+    </code></pre>
+    <p>CSS DISPLAY PROPERTY</p>
+    <pre><code>
+        &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS DISPLAY PROPERTY&lt;/title&gt;
+    &lt;style&gt;
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .box
+        {
+            border: 2px solid blue;
+            /* display: inline-block; */
+            /* MAke div a inline element */
+            padding: 45px;
+            margin: 34px;
+            /* DOn't give padding margin on top butif we want to do that  */
+            /* display: inline-block; */
+            /* if we remove inline-block and try to set width */
+            width: 344px;
+            /* DOesnot effect anything and can not do. if we want to use width then use 
+            inline block*/
+            /* display: inline-block; */
+            /* For centering content */
+            display: flex;
+            justify-content: center;
+        }
+        .box1
+        {
+            /* display: none; */
+            /* remove box and space but if we want to keep space and hide the item then */
+            /* visibility: hidden; */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="box box1"&gt;
+        I am a BOX
+    &lt;/div&gt;
+    &lt;div class="box"&gt;I am also a box&lt;/div&gt;
+    &lt;span&gt;I am a good&lt;/span&gt;
+    &lt;span&gt;Boy&lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</pre></code>
+    <p>CSS SHADOWS AND OUTLINES</p>
+    <pre><code>
+    &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Shadows and Outlines&lt;/title&gt;
+    &lt;style&gt;
+        .box
+        {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 14px -6px 20px 7px #5203ff;;
+        }
+        .textshadow
+        {
+            text-shadow: 2px 2px 4px #f904c0;
+            outline: 2px solid blue;
+            border: 2px solid green;
+            outline-offset: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="box textshadow"&gt;I am a Box&lt;/div&gt;
+    &lt;img src="BoxShadow.PNG" alt="" style="width: 390px;"&gt;
+    &lt;p&gt;outline and border are same but we can adjust outline without taking space&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+    <p>Styling Lists Using CSS</p>
+    <code><pre>
+    &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Styling Lists using CSS&lt;/title&gt;
+    &lt;style&gt;
+        nav ul li{
+            list-style: devanagari;
+            list-style-type:disc;
+            background-color: yellow;
+            /* OUTSIDE THE DOT DOESN'T APPLY BACKGROUND*/
+            list-style-position: inside;
+            /* MAke the marker inside */
+            border: 2px solid gray;
+        }
+        ul {
+            /* FOR CREATING NAV BARS */
+            list-style: none;
+            display: flex;
+            padding: 23;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;ul style="list-style: none;"&gt;
+            &lt;li&gt;HOME&lt;/li&gt;
+            &lt;!-- it comprise of marker and list item--&gt;
+             &lt;!-- For removing marker list-style: none;--&gt;
+            &lt;li&gt;ABOUT&lt;/li&gt;
+            &lt;li&gt;CONTACT&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</pre></code>
+    <p>CSS OVERFLOW PROPERTY</p>
+    <pre><code>
+    &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Overflow Property&lt;/title&gt;
+    &lt;style&gt;
+        .box {
+            width: 300px;
+            height: 80px;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            /* FOR REMOVING OVERFLOW and SCROLL BAR APPEAR */
+            /* overflow: auto; */
+            /* Control overflow if it exceed and do nothing when there is no overflow */
+            /* white-space: nowrap; */
+            /* TAKE HORIZONTAL SPACE AND NO VERTICAL SPACE */
+            /* text-overflow: ellipsis; */
+            /* MAKE ... dots on screen and remove remaining text */
+            /* overflow: clip; */
+            /* NO SCROLLBAR AND STATIC TEXT */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            /* Can also be written as */
+            overflow: auto hidden;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="box"&gt;
+        I am a good boy and I love to write lorem.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur et animi assumenda aut dolores
+        obcaecati. Dolorum dignissimos rem ipsam totam, labore alias cupiditate, iste corrupti odit quidem quo optio
+        quibusdam adipisci pariatur atque commodi est? Culpa in atque hic?
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+    <p>CSS POSITION PROPERTY</p>
+    <pre><code>
+    &lt;pre&gt;&lt;code&gt;&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS_POSITION_PROPERTY&lt;/title&gt;
+    &lt;style&gt;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            /* AUTO TAKE THE WIDTH */
+            height: 433px;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+            background-color: aqua;
+
+            /* position: relative;
+            z-index: 1; */
+
+            /* position relative is important for z index */
+            /* IF WE WANT to change position of card. 
+            Bottom to top then we can use z index */
+
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            /* absolute finds its parent and check its position element. 
+            if no then check its body. 
+            It applies to nearest position ancestor. */
+            /* WHen it found it applies from that position. */
+
+            /* position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+            /* REMAIN STICK TO TOP WHEN SCROLL THE BAR.Mean if
+            is scroll to that element and after scrolling more 
+            stick to that position */
+            /* Fixed only fix the element at the fix location */
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            /* position: relative; */
+            /* We can use top bottom property without distrubing other*/
+            /* top: -50px;
+            left: 30px; */
+        }
+
+        .box3 {
+            background-color: brown;
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px; */
+            /* REMAINS FIXED EVEN THE PAGE SROLLED UP DOWN OR LEFT RIGHT */
+        }
+
+        .box4 {
+            background-color: chocolate;
+        }
+
+        .parent {
+            padding: 43px;
+            margin-top: 44px;
+            border: 2px solid purple;
+            /* position: absolute; */
+            
+            /* transfrom, filter, or prespective properties can also
+            make an element appear as positioned */
+            
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            perspective: 0em;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="parent"&gt;
+        &lt;div class="box box1"&gt;&lt;/div&gt;
+        &lt;div class="box box2"&gt;&lt;/div&gt;
+        &lt;div class="box box3"&gt;&lt;/div&gt;
+        &lt;div class="box box4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- BY DEFAULT STATIC POSITION. ALIGN IN A COLUMN STRAIGHT 
+     --&gt;
+    &lt;p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Summary :&lt;/li&gt; 
+        &lt;li&gt;Relative - Apni orginal position se change hogi&lt;/li&gt;
+        &lt;li&gt;Absolute - apne parent ke relative position change hogi&lt;/li&gt;
+        &lt;li&gt;Fixed - page mein position fixed hojaygi&lt;/li&gt;
+        &lt;li&gt;Sticky - page mein kahin bhi ho, scroll krne pr neeche nhi jaygi, stick hojaygi&lt;/li&gt;
+        &lt;/ul&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+    <p>CSS VARIABLES</p>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Variables&lt;/title&gt;
+    &lt;style&gt;
+        /* GLOBAL VARAIABLES */
+        :root
+        {
+            --color:rgb(122, 5, 118);
+            --seccolor:rgb(92, 92, 254);
+            --defpad:23px;
+            --defmar:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: rgb(98, 245, 98); */
+            background-color: var(--color);
+        }
+        ul li:first-child
+        {
+            /* Local Variable */
+            --color:rgb(122, 104, 5);
+            background-color: var(--color,blue);
+            /*if variable not present then used given color*/
+        }
+        .container
+        {
+            /* background-color: rgb(136, 192, 136); */
+            background-color: var(--seccolor);
+        }
+        /* NAV BAR */
+        ul li{
+            list-style: none;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        ul
+        {
+            display: flex;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="nav"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Home&lt;/li&gt;
+            &lt;li&gt;About&lt;/li&gt;
+            &lt;li&gt;Contact&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="container"&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, nesciunt ipsam
+        dignissimos quos libero sunt quia qui sed tempore tenetur aut est ratione, repudiandae saepe dolor quaerat animi
+        recusandae eveniet amet optio quis? Omnis, facere repellat consequuntur facilis quo molestiae quasi vel velit
+        animi.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
+    <p>CSS MEDIA QUERY</p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;CSS MEDIA QUERY&lt;/title&gt;
+            &lt;style&gt;
+                body {
+                    background-color: red;
+                }
+                .box {
+                    width: 344px;
+                    height: 344px;
+                    background-color: steelblue;
+                    padding: 3px;
+                    margin: 3px;
+                }
+                .boxes {
+                    display: flex;
+                }
+                @media screen and (orientation: landscape) {
+                    body {
+                        border: 2px solid purple;
+                    }
+                }
+                /* 455 to 755 TABLETS */
+                @media only screen and (max-width: 455px) {
+                    body {
+                        background-color: blue;
+                    }
+                    .boxes {
+                        flex-direction: column;
+                    }
+                    .box {
+                        background-color: red;
+                    }
+                }
+                /* all print speech */
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div&gt;
+                Hy i AM a Red Body guy...
+            &lt;/div&gt;
+            &lt;div class="boxes"&gt;
+                &lt;div class="box"&gt;&lt;/div&gt;
+                &lt;div class="box"&gt;&lt;/div&gt;
+                &lt;div class="box"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <p>FLOAT AND CLEAR</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;CSS FLOAT AND CLEAR&lt;/title&gt;
+            &lt;style&gt;
+                img {
+                    float: right; 
+                    /* Make the image float to the right */
+                }
+                .cards {
+                    border: 2px solid black;
+                    display: flow-root;
+                    /* Use flow-root to contain floated elements */
+                }
+                .card {
+                    border: 2px solid red;
+                }
+                .card:nth-child(4) {
+                    background-color: aqua;
+                    clear: right;
+                    /* Clear floats on the fourth card */
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;cards&quot;&gt;
+                &lt;img src=&quot;https://images.unsplash.com/photo-1718968053609-2ebb48c56421?q=80&amp;w=1887&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;
+                    width=&quot;50&quot; alt=&quot;A BUILDING IMAGE&quot;&gt;
+                &lt;div class=&quot;card&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, tenetur.&lt;/div&gt;
+                &lt;div class=&quot;card&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis eum amet ullam numquam iste quos veniam quia, ad accusamus!&lt;/div&gt;
+                &lt;div class=&quot;card&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum aliquid omnis, expedita vero exercitationem veritatis itaque animi tempora soluta tempore fugit cum, iure minima pariatur ullam id! Eum, aliquam.&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+    <p>MORE ON CSS SELECTORS</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                &lt;title&gt;MORE ON CSS SELECTORS&lt;/title&gt;
+                &lt;style&gt;
+                    /* .box:first-child
+                    {
+                        background-color: burlywood;
+                    }
+                    .box:first-child:first-line{
+                        color: blueviolet;
+                    } */
+            
+                     /* .boxes *
+                     {
+                        border: 2px solid blue;
+                        color: rebeccapurple;
+                     }
+                     p,a,.box, [data-color='primary']
+                     {
+                        margin-top: 45px;
+                     } */
+                    
+                     .box:nth-child(odd)
+                     {
+                        background-color: aqua;
+                     }
+                     .box:nth-last-child(1)
+                     {
+                        background-color: red;
+                     }
+                     .boxes::before{
+                        content: &quot;HARIS IS GOOD&quot;;
+                        color: aqua;
+                     }
+                     .boxes::after{
+                        content: &quot;Haris is also bad&quot;;
+                        color: brown;
+                     }
+                     ::selection{
+                        color: rgb(218, 20, 20);
+                        background: salmon;
+                     }
+                     .box::first-letter{
+                        color: chartreuse;
+                     }
+                     input::placeholder
+                     {
+                        color: rgb(104, 104, 104);
+                     }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;div class=&quot;boxes&quot;&gt;
+                &lt;div data-color=&quot;primary&quot; class=&quot;box&quot;&gt;HY I AM A BOX Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, optio.&lt;/div&gt;
+                &lt;div class=&quot;box&quot;&gt;HY I AM A BOX&lt;/div&gt;
+                &lt;div class=&quot;box&quot;&gt;HY I AM A BOX&lt;/div&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Type your name here&quot;&gt;
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+    <p>FlexBox</p>
+    <pre>
+                <code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;CSS FLEXBOX&lt;/title&gt;
+                    &lt;style&gt;
+                        .container{
+                            border: 2px solid red; 
+                            /* to make item from top to bottom to left to right */
+                            display: flex;
+                            /* flex is given to container */
+                            height: 80vh;
+                            /* To make item center */
+                            /* check main axis */
+                            /* depend upon flex direction */
+                            /* for row main axies left to right */
+                            /* for column main axies top to bottom */
+                            /* justify-content: center; */
+                            /* vertically center of page */
+                            align-items: center;
+                            /* always apply to container */
+                            flex-direction: column;
+                            /* for changing flex direction */
+                            flex-direction: row;
+                            /* flex-direction: row-reverse; */
+                            /* flex-direction: column;
+                            flex-direction: column-reverse; */
+                            /* for wrapping extra items in case of overflow */
+                            flex-wrap: wrap;
+                            /* for center 1 line align-line used */
+                            /* more than 2 lines align content is used */
+                            align-content: center;
+                            align-content: flex-start;
+                            /* flex-wrap: wrap-reverse; */
+                
+                            /* flex flow */
+                            /* tell it where to wrap */
+                            flex-flow: row wrap-reverse;
+                            /* Spacing between items */
+                            gap: 30px;
+                            row-gap: 40px;
+                            column-gap: 10px;
+                            gap: 40px 10px;
+                        }
+                        .item{
+                            width:32px;
+                            height: 32px;
+                            border: 2px solid black;
+                            margin: 4px;
+                            background-color: blueviolet;
+                        }
+                        .order-1
+                        {
+                            order: 1;
+                        }
+                        .order-2
+                        {
+                            order: 2;
+                        }
+                        .order-3
+                        {
+                            order: 3;
+                        }
+                        .item2{
+                            flex-grow: 2;
+                            /* Take 2 width of box */
+                            flex-shrink: 3;
+                            /* When reduce size it will shrink */
+                        }
+                        .item3{
+                            align-self: flex-end;
+                            align-self: flex-start;
+                        }
+                
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;main&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                            &lt;div class=&quot;item item1&quot;&gt;1&lt;/div&gt;
+                            &lt;div class=&quot;item item2&quot;&gt;2&lt;/div&gt;
+                            &lt;div class=&quot;item item3&quot;&gt;3&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;4&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;1&lt;/div&gt;
+                            &lt;div class=&quot;item order-3&quot;&gt;2&lt;/div&gt;
+                            &lt;div class=&quot;item order-2&quot;&gt;3&lt;/div&gt;
+                            &lt;div class=&quot;item order-1&quot;&gt;4&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;1&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;2&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;3&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;4&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/main&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+        </code></pre>
+    <p>Css Grid</p>
+    <pre>
+            <code>&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                &lt;title&gt;CSS_GRID&lt;/title&gt;
+                &lt;style&gt;
+                    .container
+                    {
+                        /* fr unit */
+                        width: 80vw;
+                        height: 100vh;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        /* 1 fraction of width (1/3 of width)*/
+                        grid-template-columns: 1fr 2fr 1fr;
+                        /* 2fr take 2 times width */
+                        gap:34px;
+                        column-gap: 10px;
+                        row-gap: 20px;
+                        grid-template-columns: repeat(4,1fr);
+                        grid-template-columns: repeat(4,minmax(100px,1fr));
+            
+                        border: 2px solid black;
+                        display: grid;
+                        justify-items: center;
+                        align-items: center;
+                        /* First column width is 120px...See in horizontal */
+                        /* second column width is 100px */
+                        /* grid-template-columns: [name1]120px [name2]100px[name3]; */
+                        /* Divide screen into two columns */
+                        /* fill space from left to right to next line */
+                        /* display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: center; */
+                        /* grid-template-rows: 100px 100px; */
+            
+                    }
+                    .item
+                    {
+                        border: 2px solid red;
+                        height: 55px;
+                        width: 55px;
+                    }
+                    .item4
+                    {
+                        /* grid-row: 1/2; */
+                        /* grid-column: 1/2; */
+                        /* grid-column: name1/name3; */
+                        /* Come at position of 1 */
+                        /* Start from position1 and end at position2 */
+                        /* grid-row-start:1 ;
+                        grid-row-end:2 ; */
+                        /* same */
+                    }
+                    .item1
+                    {
+                        /* grid-row: 1/2; */
+                        /* grid-column: 1/2; */
+                        /* 1 and 4 overlap */
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;item item1&quot;&gt;1&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;2&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;3&lt;/div&gt;
+                &lt;div class=&quot;item item4&quot;&gt;4&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;5&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+                </pre>
+    <p>CSS GRID 02</p>
+    <pre>
+                    <code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;en&quot;&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                        &lt;title&gt;CSS_GRID2&lt;/title&gt;
+                        &lt;style&gt;
+                            .container
+                            {
+                                border: 2px solid black;
+                                display: grid;
+                                grid-template-areas: &quot;nav nav nav&quot;
+                                                    &quot;side article article&quot;
+                                                    &quot;footer footer footer&quot;;
+                            }
+                            .item
+                            {
+                                border: 2px solid red;
+                                height: 55px;
+                                /* width: 55px; */
+                            }
+                            .item1
+                            {
+                               grid-area: nav;
+                               background-color: aqua;
+                            }
+                            .item2
+                            {
+                                grid-area: side;
+                                background-color: blue;
+                            }
+                            .item3
+                            {
+                                grid-area: article;
+                                background-color: beige;
+                            }
+                            .item4
+                            {
+                                grid-area: footer;
+                                background-color: azure;
+                            }
+                            .item5
+                            {
+                                /* grid-area: nav; */
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                        &lt;div class=&quot;item item1&quot;&gt;1&lt;/div&gt;
+                        &lt;div class=&quot;item item2&quot;&gt;2&lt;/div&gt;
+                        &lt;div class=&quot;item item3&quot;&gt;3&lt;/div&gt;
+                        &lt;div class=&quot;item item4&quot;&gt;4&lt;/div&gt;
+                        &lt;div class=&quot;item item5&quot;&gt;5&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </code>
+                        </pre>
+    <p>Transform MasterClass</p>
+    <pre>
+                            <code>&lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;CCS MASTECLASS&lt;/title&gt;
+                                &lt;style&gt;
+                                
+                                    .container{
+                                        width: 100vw;
+                                        height: 80vh;
+                                        border: 2px solid blue;            
+                                    }
+                                    .box{
+                                        height: 50px;
+                                        width: 50px;
+                                        background-color: beige;
+                                        border: 2px solid black;
+                                        /* transform: rotate(40deg); */
+                                        /* transform: rotate(0.25turn); */
+                                        /* transform: rotateX(40deg); */
+                                        /* transform: rotateY(40deg); */
+                                        /* transform: rotateZ(40deg); */
+                                        /* transform: scale(1.6); */
+                                        /* transform: scaleX(1.6); */
+                                        /* transform: scaleY(1.6); */
+                                        /* transform: scaleZ(1.6); */
+                                        /* transform: scale3d(1.5,5,1.5); */
+                                        /* transform: skewX(34deg);
+                                        transform: skewY(34deg);
+                                        transform: skew(34deg); */
+                                        /* transform: translate(34px);
+                                        transform: translateX(34px);
+                                        transform: translateY(34px);
+                                        transform: translateZ(34px);
+                                        transform: translate3d(2px,3px,4px); */
+                                        /* transform: rotate(40deg) translate3d(10px, 10px, 10px) skew(20deg, 30deg) scale3d(1.5, 1.23, 1); */
+                            
+                                        transform: rotate(0.125turn);
+                                        /* transform-origin: (10%); */
+                            
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;!-- 2d transform and 3d transform --&gt;
+                                 &lt;div class=&quot;container&quot;&gt;
+                                    &lt;div class=&quot;box&quot;&gt;BOX&lt;/div&gt;
+                                 &lt;/div&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                            </code>
+                                </pre>
+    <p>Special Transform</p>
+    <pre>
+        <code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        
+        &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+          &lt;title&gt;CSS Transform by CodeWithHarry&lt;/title&gt;
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;stylex.css&quot;&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+        
+        
+        
+          &lt;div class=&quot;wrap&quot;&gt;
+            &lt;!-- scaleX: Scales the element on the X-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue scaleX&quot;&gt;
+                scaleX
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- scaleY: Scales the element on the Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue scaleY&quot;&gt;
+                scaleY
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- scale: Scales the element on both the X-axis and Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue scale&quot;&gt;
+                scale
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- translateX: Moves the element along the X-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue translateX&quot;&gt;
+                translateX
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- translateY: Moves the element along the Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue translateY&quot;&gt;
+                translateY
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- translate: Moves the element along both the X-axis and Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue translate&quot;&gt;
+                translate
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- matrix: A 2D transformation method using a matrix of six values. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue matrix&quot;&gt;
+                matrix
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- rotate: Rotates the element around the Z-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue rotate&quot;&gt;
+                rotate
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- skew: Skews the element on the X-axis and Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue skew&quot;&gt;
+                skew
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- skewX: Skews the element on the X-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue skewX&quot;&gt;
+                skewX
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- skewY: Skews the element on the Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue skewY&quot;&gt;
+                skewY
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- matrix3d: A 3D transformation method using a matrix of 16 values. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue matrix3d&quot;&gt;
+                matrix3d
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- translate3d: Moves the element along the X-axis, Y-axis, and Z-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue translate3d&quot;&gt;
+                translate3d
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- rotateY: Rotates the element around the Y-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue rotateY&quot;&gt;
+                rotateY
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- rotateX: Rotates the element around the X-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue rotateX&quot;&gt;
+                rotateX
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- translateZ: Moves the element along the Z-axis. --&gt;
+            &lt;div class=&quot;box&quot;&gt;
+              &lt;div class=&quot;blue translateZ&quot;&gt;
+                translateZ
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/body&gt;
+        
+        &lt;/html&gt;
+        </code>
+          </pre>
+          <p>Transition</p>
+          <pre><code>
+            &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en"&gt;<br>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+        &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+        &nbsp;&nbsp;&lt;title&gt;CSS TRANSITION PROPERTY&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;style&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.container {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgb(250, 150, 19);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 50vw;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 40vh;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.box {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: aqua;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 5vw;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 4vh;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Combining all 4 properties */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition: all 3s ease-in-out 1s;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.translate {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Add and remove property can cause transition */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(10vw) translateY(10vh) scale(2);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&lt;/style&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="box translate"&gt;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;p style="margin-top: 200px;"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;The transition-timing-function property can have the following values:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;linear - specifies a transition effect with the same speed from start to end&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ease-in - specifies a transition effect with a slow start&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ease-out - specifies a transition effect with a slow end&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ease-in-out - specifies a transition effect with a slow start and end&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+            &lt;li&gt;transition&lt;/li&gt;
+            &lt;li&gt;transition-delay&lt;/li&gt;
+            &lt;li&gt;transition-duration&lt;/li&gt;
+            &lt;li&gt;transition-property&lt;/li&gt;
+            &lt;li&gt;transition-timing-function&lt;/li&gt;
+          </code></pre>
+          <h1> Animation</h1>
+          <pre><code>
+            &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en"&gt;<br><br>
+
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+        &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+        &nbsp;&nbsp;&lt;title&gt;Css Animations&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;style&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.container {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgb(15, 162, 162);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 80vh;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 80vw;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid black;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;.box {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 34px;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 45px;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: aqua;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation: identifier; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-duration: 1s; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-iteration-count: 3; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-timing-function: ease-out; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-delay: 1s; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-direction:alternate-reverse; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation-play-state: paused; */<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Combining all */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* animation: name duration timing-function delay iteration-count direction fill-mode; */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;animation: identifier 3s ease-in-out 1s 3 alternate-reverse,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier2 3s ease-in-out 3s 1;<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* FPR ANIMATIONS USE KEYFRAMES */<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@keyframes identifier {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from { background-color: red;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(200px);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: yellow;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@keyframes identifier2 {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0%{transform: rotate(100deg);}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%{transform: rotate(200deg);}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%{transform: rotate(90deg);}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%{transform: rotate(20deg);}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100%{transform: rotate(10deg);}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &lt;/style&gt;<br>
+        &lt;/head&gt;<br><br>
+
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="box"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Box<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;p style="margin-top:50px;"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The animation property is a shorthand property for:&lt;/p&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-name&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-duration&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-timing-function&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-delay&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-iteration-count&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-direction&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-fill-mode&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;animation-play-state&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+          </code></pre>
+          
+</html>

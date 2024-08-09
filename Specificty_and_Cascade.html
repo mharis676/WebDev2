@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICITY AND CASCADE</title>
+    <link rel="stylesheet" href="styles4.css">
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred
+        {
+            color: red;
+        }
+        .cpurple
+        {
+            color: purple;
+        }
+        /* [data-x=a]
+        {
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS SPECIFICITY</h1>
+        <h1>CASCADE ALGOTITHM</h1>
+        <img src="cascade.PNG" style="width: 400px;" alt="">
+        <img src="cascade2.PNG" style="width: 400px;" alt="">
+        <img src="Specificty.PNG" alt="">
+        <h1>Summary of Lecture 21</h1> 
+        <ul>
+            <li> Cascade: Many selector are used to style a single element and css solve this conflict by Cascade.</li>
+<li>Cascade Algorithm : It determine which property of CSS will be applied in Element. The cascade algorithm has 4 distinct stages.</li>
+<li> Position and order of appearance : If same selector, then last one will be used</li>
+<li> Origin: authored CSS has priority</li>
+<li> Important: When !important It has highest priority.</li> 
+<li> Specificity: Selector with high specificity is applied to html element.</li>
+<li> Order of Specificity: Inline Style > ID selector > Class or Attribute  selector > Element Selector > Universal Selector</li>
+<li> Calculating Specificity: Value of Each Selector: Universal is 0, 1 for each element selector or pseudo-element, 10 for each class value (or pseudo-class or attribute selector), 100 for each ID value. Inline Style has 1000 specificity. Just add value to find specificity
+</li>
+        </ul>
+   </div>
+</body>
+</html>

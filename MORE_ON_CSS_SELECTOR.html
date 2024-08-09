@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON CSS SELECTORS</title>
+    <style>
+        /* .box:first-child
+        {
+            background-color: burlywood;
+        }
+        .box:first-child:first-line{
+            color: blueviolet;
+        } */
+
+         /* .boxes *
+         {
+            border: 2px solid blue;
+            color: rebeccapurple;
+         }
+         p,a,.box, [data-color='primary']
+         {
+            margin-top: 45px;
+         } */
+        
+         .box:nth-child(odd)
+         {
+            background-color: aqua;
+         }
+         .box:nth-last-child(1)
+         {
+            background-color: red;
+         }
+         .boxes::before{
+            content: "HARIS IS GOOD";
+            color: aqua;
+         }
+         .boxes::after{
+            content: "Haris is also bad";
+            color: brown;
+         }
+         ::selection{
+            color: rgb(218, 20, 20);
+            background: salmon;
+         }
+         .box::first-letter{
+            color: chartreuse;
+         }
+         input::placeholder
+         {
+            color: rgb(104, 104, 104);
+         }
+    </style>
+</head>
+<body>
+<div class="boxes">
+    <div data-color="primary" class="box">HY I AM A BOX Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, optio.</div>
+    <div class="box">HY I AM A BOX</div>
+    <div class="box">HY I AM A BOX</div>
+    <input type="text" placeholder="Type your name here">
+</div>
+</body>
+</html>
