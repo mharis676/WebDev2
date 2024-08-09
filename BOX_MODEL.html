@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOXMODEL</title>
+    <style>
+        .box{
+            background-color: aqua;
+        }
+        .box1
+        {
+            color: yellow;
+            padding: 10px;
+            /* Padding is included in expanding color */
+            margin:25px;
+            border: 2px solid gray;
+            height: 200px;
+            /* if box sizing not used. The height doen't include padding, border */
+            box-sizing: border-box;
+            /* the width and height include the content, padding, and border.*/
+            /* Doesn't include margin */
+        }
+        .box2
+        {
+            color: red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+            /* Margin collapse */
+            /* If two margin overlap then maximum margin is applied */
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box box2">I am a box2</div>
+    <img style="width: 200;" src="Boxmodel.PNG" alt="nothing">
+</body>
+</html>

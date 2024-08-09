@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <style>
+        .container{
+            border: 2px solid red; 
+            /* to make item from top to bottom to left to right */
+            display: flex;
+            /* flex is given to container */
+            height: 80vh;
+            /* To make item center */
+            /* check main axis */
+            /* depend upon flex direction */
+            /* for row main axies left to right */
+            /* for column main axies top to bottom */
+            /* justify-content: center; */
+            /* vertically center of page */
+            align-items: center;
+            /* always apply to container */
+            flex-direction: column;
+            /* for changing flex direction */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            /* for wrapping extra items in case of overflow */
+            flex-wrap: wrap;
+            /* for center 1 line align-line used */
+            /* more than 2 lines align content is used */
+            align-content: center;
+            align-content: flex-start;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex flow */
+            /* tell it where to wrap */
+            flex-flow: row wrap-reverse;
+            /* Spacing between items */
+            gap: 30px;
+            row-gap: 40px;
+            column-gap: 10px;
+            gap: 40px 10px;
+        }
+        .item{
+            width:32px;
+            height: 32px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+        }
+        .order-1
+        {
+            order: 1;
+        }
+        .order-2
+        {
+            order: 2;
+        }
+        .order-3
+        {
+            order: 3;
+        }
+        .item2{
+            flex-grow: 2;
+            /* Take 2 width of box */
+            flex-shrink: 3;
+            /* When reduce size it will shrink */
+        }
+        .item3{
+            align-self: flex-end;
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">1</div>
+            <div class="item order-3">2</div>
+            <div class="item order-2">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FILTERS</title>
+    <style>
+        img {
+            width: 350px;
+            /* filter: blur(10px); */
+        }
+        .img1{filter:hue-rotate(90deg);}
+        .img2{filter: invert(1);}
+        .img3{filter: sepia(100%);}
+        .img4{filter: grayscale(100%);}
+        .img5{filter: brightness(300%) contrast(0.5);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://i.pinimg.com/736x/db/a0/75/dba075bad08221952e04c0f75ec1c974.jpg" alt="CAN'T LOAD">
+        <img class="img2" src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+        <img class="img3" src="https://cdn.pixabay.com/photo/2024/06/20/17/03/fishing-8842590_1280.jpg" alt="">
+        <img class="img4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg" alt="">
+        <img class="img5" src="https://cdn.pixabay.com/photo/2021/10/27/03/37/road-6745746_1280.jpg" alt="">
+    </div>  
+    <div class="p">
+        <ul>
+            <li>filter: blur(5px);</li>
+            <li>filter: brightness(0.4);</li>
+            <li>filter: contrast(200%);</li>
+            <li>filter: drop-shadow(16px 16px 20px blue);</li>
+            <li>filter: grayscale(50%);</li>
+            <li>filter: hue-rotate(90deg);</li>
+            <li>filter: invert(75%);</li>
+            <li>filter: opacity(25%);</li>
+            <li>filter: saturate(30%);</li>
+            <li>filter: sepia(60%);</li>
+            <li>filter: url("filters.svg#filter-id");</li>
+            <li>filter: contrast(175%) brightness(3%);</li>
+            <li>filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);</li>
+            <li>filter: none;</li>
+            <li>filter: inherit;</li>
+            <li>filter: initial;</li>
+            <li>filter: revert;</li>
+            <li>filter: revert-layer;</li>
+            <li>filter: unset;</li>
+        </ul>
+    </div> 
+</body>
+</html>

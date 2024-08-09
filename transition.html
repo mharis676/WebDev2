@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSITION PROPERTY</title>
+    <style>
+        .container{
+            background-color: rgb(250, 150, 19);
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            /* 4 Properties */
+            /* transition-property: transform; */
+            /* transition-property:all ; */
+            /* transition-property: background-color,transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            /* Combining all 4 properties */
+            transition: all 3s ease-in-out 1s;
+
+        }
+        .translate{
+            /* Add and remove property can cause transition */
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+    <p style="margin-top: 200px;">
+        The transition-timing-function property can have the following values:
+<ul>
+        <li>ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+        <li>linear - specifies a transition effect with the same speed from start to end</li>
+        <li>ease-in - specifies a transition effect with a slow start</li>
+        <li>ease-out - specifies a transition effect with a slow end</li>
+        <li>ease-in-out - specifies a transition effect with a slow start and end</li>
+        <li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
+        <li>transition</li>
+        <li>transition-delay</li>
+        <li>transition-duration</li>
+        <li>transition-property</li>
+        <li>transition-timing-function</li>
+    </ul>
+    </p>
+</body>
+</html>

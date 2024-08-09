@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="post">
+         <!-- get request simple request (telling something to server) -->
+         <!-- post request when we want to give data -->
+         <!-- INPUT TAG -->
+          <h1>Form to Apply</h1>
+          <label for="">Enter Your Username</label>
+         <input type="text" id="username" name="UserName" placeholder="Enter Username" value="">
+         <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="None" name="" value="Gay">
+            <label for="None">None</label>
+            <!-- Name matters alot -->
+         </div>
+         <div>
+            <input type="checkbox" id="Subcribed" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to my channel</label>
+         </div>
+         <div>
+            <label for="comment">Enter your commment here</label>
+            <textarea name="comment" rows="4" cols="50" id="comment"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- MANY OTHERS ATTRIBUTES IN FORM> CAN BE SEEN ON Manual of Form Html -->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* ELEMENT SELECTOR */
+        div{
+            background-color:red ;
+        }
+        /* Class Selector */
+        .red
+        {
+            background-color: blue;
+        }
+        /* Id selector */
+        #green
+        {
+            background-color: green;
+        }
+        /* child Selector */
+        /* Every p inside div */
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+        /* Descendent Selector */
+        /* a way to select elements that are located 
+        somewhere underneath other elements */
+        div p{
+            color: black;
+            background-color: brown;
+        }
+        /* UNIVERSAL SELECTORS */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited
+        {
+            color: black;
+        }
+        a:link
+        {
+            color: green;
+        }
+        a:active
+        {
+            color: red;
+        }
+        a:hover{
+            background-color: violet;
+        }
+        p:first-child
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">I am a DIv</div>
+    <div>I am a DIv2</div>
+    <div id="green">I am a DIV3</div>
+    <div><p>I am para inside div</p></div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.outlook.com">Go to Outlook</a>
+    <div class="one"><p>I am first</p>
+    <p>I am Second</p></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            list-style-type:disc;
+            background-color: yellow;
+            /* OUTSIDE THE DOT DOESN'T APPLY BACKGROUND*/
+            list-style-position: inside;
+            /* MAke the marker inside */
+            border: 2px solid gray;
+        }
+        ul {
+            /* FOR CREATING NAV BARS */
+            list-style: none;
+            display: flex;
+            padding: 23;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <!-- it comprise of marker and list item-->
+            <!-- For removing marker list-style: none;-->
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+</body>
+</html>

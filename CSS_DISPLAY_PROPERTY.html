@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .box
+        {
+            border: 2px solid blue;
+            /* display: inline-block; */
+            /* MAke div a inline element */
+            padding: 45px;
+            margin: 34px;
+            /* DOn't give padding margin on top butif we want to do that  */
+            /* display: inline-block; */
+            /* if we remove inline-block and try to set width */
+            width: 344px;
+            /* DOesnot effect anything and can not do. if we want to use width then use 
+            inline block*/
+            /* display: inline-block; */
+            /* For centering content */
+            display: flex;
+            justify-content: center;
+        }
+        .box1
+        {
+            /* display: none; */
+            /* remove box and space but if we want to keep space and hide the item then */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a BOX
+    </div>
+    <div class="box">I am also a box</div>
+    <span>I am a good</span>
+    <span>Boy</span>
+</body>
+</html>

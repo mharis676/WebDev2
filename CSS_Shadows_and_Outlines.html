@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box
+        {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 14px -6px 20px 7px #5203ff;;
+        }
+        .textshadow
+        {
+            text-shadow: 2px 2px 4px #f904c0;
+            outline: 2px solid blue;
+            border: 2px solid green;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box textshadow">I am a Box</div>
+    <img src="BoxShadow.PNG" alt="" style="width: 390px;">
+    <p>outline and border are same but we can adjust outline without taking space</p>
+</body>
+</html>

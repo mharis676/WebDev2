@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 80px;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            /* FOR REMOVING OVERFLOW and SCROLL BAR APPEAR */
+            /* overflow: auto; */
+            /* Control overflow if it exceed and do nothing when there is no overflow */
+            /* white-space: nowrap; */
+            /* TAKE HORIZONTAL SPACE AND NO VERTICAL SPACE */
+            /* text-overflow: ellipsis; */
+            /* MAKE ... dots on screen and remove remaining text */
+            /* overflow: clip; */
+            /* NO SCROLLBAR AND STATIC TEXT */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            /* Can also be written as */
+            overflow: auto hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write lorem.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur et animi assumenda aut dolores
+        obcaecati. Dolorum dignissimos rem ipsam totam, labore alias cupiditate, iste corrupti odit quidem quo optio
+        quibusdam adipisci pariatur atque commodi est? Culpa in atque hic?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        .logo {
+            margin-right: 50px;
+            text-align: center;
+        }
+        
+        .logo img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .login-form {
+            max-width: 300px;
+            width: 100%;
+        }
+        
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .login-form a {
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .login-form .separator {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook Logo">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="login-form">
+            <form action="/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzIyMjQwODg2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;next"
+                method="post">
+                <input type="text" name="email" id="email" placeholder="Email address or phone number" autofocus aria-label="Email address or phone number">
+                <input type="password" name="pass" id="pass" placeholder="Password" aria-label="Password">
+                <button type="submit">Log in</button>
+                <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzIyMjQwODg2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login&amp;next">Forgotten password?</a>
+                <div class="separator">or</div>
+                <a href="#" class="create-account">Create new account</a>
+            </form>
+            <div class="create-page">
+                <a href="/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header { 
+            width: 99.5%;
+            height: 120px;
+            background-color: rgb(90, 143, 11);
+            border: 2px solid black;
+            border-radius: 5px;
+            color: white;
+            font-weight: 400;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header h1{
+            padding: 15px 50px;
+        }
+        header h3{
+            padding: 5px 50px;
+        }
+        main {
+            margin: 50px;
+        }
+        main h3{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+        }
+        main input,
+        main select,
+        main textarea {
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        main textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        button {
+            border: 2px solid black;
+            width: 70px;
+            height: 35px;
+            margin-top: 10px;
+            background-color: rgb(90, 143, 11);
+            color: white;
+            font-weight: 500;
+            font-size: medium;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+        <h3>Please fill the texts in the fields.</h3>
+    </header>
+    <main>
+        <form>
+            <h3>
+                <label for="name">Your name:</label>
+            </h3>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <h3>
+                <label for="email">Your Email:</label>
+            </h3>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <h3>
+                <label for="message">Message:</label>
+            </h3>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message to us."></textarea>
+            <h3>
+                <label for="subject">Subject:</label>
+            </h3>
+            <select id="subject" name="subject">
+                <option value="JOB INQUIRY">JOB INQUIRY</option>
+                <option value="ISSUES">ISSUES</option>
+                <option value="MANAGEMENT">MANAGEMENT</option>
+                <option value="COMPLAINT">COMPLAINT</option>
+            </select>
+            <div>
+                <button type="button">Send</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
