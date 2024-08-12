@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- REMIX ICONS -->
+    <!-- https://remixicon.com/icon/menu-line -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .nav {
+            height: 100px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5vw;
+            border-bottom: 2px solid #050000;
+        }
+
+        .nav-part2 {
+            display: flex;
+            gap: 4vw;
+        }
+
+        .nav-part2 a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            font-size: 1.2vw;
+            font-weight: 800;
+            align-items: center;
+            display: none;
+        }
+
+        .nav h2 {
+            font-size: 2vw;
+            font-weight: 700;
+        }
+
+        .nav h4 {
+            font-size: 1.1vw;
+            margin-top: 10px;
+        }
+        .nav button{
+            font-size: 1vw;
+            padding: 0.7vw 1.4vw;
+            background-color: lightseagreen;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .content {
+            width: 100%;
+            height: calc(100% - 100px);
+            display: flex;
+            position: relative;
+        }
+
+        .left {
+            height: 100%;
+            width: 55%;
+            /* background-color: crimson; */
+            padding: 5vw 5vw;
+        }
+
+        .right {
+            height: 100%;
+            width: 45%;
+            /* background-color: royalblue; */
+            padding: 7vw 4vw;
+        }
+        .left h1{
+            font-size: 4.2vw;
+            line-height: 4.4vw;
+        }
+        .left h1 span{
+            color: lightseagreen;
+        }
+        .left p{
+            font-size: 1.2vw;
+            font-weight: 600;
+            color: #666;
+            width: 80%;
+            margin-top: 1.5vw;
+            margin-bottom: 3vw;
+        }
+        button {
+            font-size: 1.2vw;
+            padding: 1.1vw 2.1vw;
+            background-color: lightseagreen;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+        .right img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width:600px) {
+            .nav {
+                /* background-color: lightseagreen;
+                color: #fff; */
+                padding: 0 5vw;
+                height: 60px;
+            }
+
+            .nav h2 {
+                font-size: 5.1vw;
+            }
+
+            .nav h4 {
+                font-size: 5vw;
+                display: none;
+            }
+            .nav button{
+                display: none;
+            }
+            .nav-part2 a {
+                display: block;
+                font-size: 4.5vw;
+                color: #050000;
+            }
+            .nav-part2 button{
+                font-size: 2.5vw;
+            }
+            .content{
+                height: calc(100%-60px);
+                flex-direction: column;
+            }
+            .left
+            {
+                width: 100%;
+                height: 45%;
+                padding: 4vw 6vw;
+            }
+            .right
+            {
+                width: 100%;
+                height: 55%;
+            }
+            .left h1{
+                font-size: 10vw;
+                line-height: 12vw;
+            }
+            .left p{
+                font-size: 3vw;
+                width: 90%;
+                margin-top: 5vw;
+                margin-bottom: 6vw;
+            }
+            .content button{
+                padding: 4vw 6vw;
+                font-size: 3.5vw;
+                border-radius: 3px;
+                font-weight: 600;
+            }
+        }
+
+
+        @media (max-width:1000px){
+            .nav h4{
+                font-size: 2.5vw;
+            }
+            .nav h2{
+                font-size: 5vw;
+                color: #3f6f08d8;
+            }
+            /* .nav{background-color: #f6366c;} */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>Logo</h2>
+            <div class="nav-part2">
+                <h4>Store</h4>
+                <h4>Process</h4>
+                <h4>Career</h4>
+                <h4>Blog</h4>
+                <h4>Account</h4>
+                <button>Sign In</button>
+                <a href="#"><i class="ri-menu-line"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>Learn From The <span>Smartest</span> Cooding Platform.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat error quidem eligendi earum
+                    voluptate accusantium atque aperiam optio natus ipsum.</p>
+                    <button>Explore Now</button>
+            </div>
+            <div class="right">
+                <img src="https://scontent.fisb5-1.fna.fbcdn.net/v/t39.30808-6/431887789_396556943140848_1448720134651676940_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE4rzn6yJUN-xX7Jxn4-zQvrlTVR0QIN5CuVNVHRAg3kNi2PCnN_TlI6xVdLXRPHg7oKV-3d8cwlJGzJOA3DKd1&_nc_ohc=T-T2lTHwfz4Q7kNvgF3Fe2w&_nc_ht=scontent.fisb5-1.fna&oh=00_AYCgfp78KODklnzHyHffrkFktWuVMihw5TkDwQb-CCGfOQ&oe=66BFAA23" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
